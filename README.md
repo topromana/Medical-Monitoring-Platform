@@ -2,7 +2,7 @@ This system is composed of several modules:
 - A web application for managing the patients
 - An automated pillbox notifying the patient when he needs to take his medication using RPC
 - Sensors monitoring the patient's activity to detect if something bad happened, using RabbitMq as a message oriented middleware
-
+- The frontend part, developed using ReactJs
 
 The web application 
 - Was developed using Spring technology, and PostgreSql for the database. For the security part of the project, the main components  we used are: WebSecurityConfigurerAdapter to provide Http security configurations, the annotation EnableGlobalMethodSecurity (to provide @PreAuthorize and @PostAuthorize, so as to make sure that only users that have certain roles can perform certain tasks), and PasswordEncoder, in order to make sure that the password for each account will be encoded, and not just displayed in the database as plain text, visible to anyone. It also contains the consumer side enabling the communnication using RabbitMq, and the server side of the PillboxGUI.
