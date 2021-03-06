@@ -18,7 +18,7 @@ The PillBox
   
 
 The RabbitMQ producer side
-The producer reads the data from activity.txt, then using a file reader and a scanner it reads the data from the file line by line, transforms the start_time and end_time into the desired miliseconds format, then puts all the data together in the JSON format in order to finally publish that message on the channel.
+- The producer reads the data from activity.txt, then using a file reader and a scanner it reads the data from the file line by line, transforms the start_time and end_time into the desired miliseconds format, then puts all the data together in the JSON format in order to finally publish that message on the channel.
 
 ![image](https://user-images.githubusercontent.com/45190679/110201781-9a49e080-7e6d-11eb-9b62-6f80713c07f5.png)
 
